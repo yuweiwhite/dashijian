@@ -1,6 +1,7 @@
 $(function () {
-    getUserInfo()
     var layer = layui.layer
+    getUserInfo()
+
     $('#btnLogout').on('click', function () {
         //弹出提示框，确定才会执行里面的代码
         layer.confirm('确定退出吗？', { icon: 3, title: '提示' }, function (index) {
@@ -9,6 +10,10 @@ $(function () {
             layer.close(index);
         })
     })
+
+
+
+
 })
 
 function getUserInfo() {
