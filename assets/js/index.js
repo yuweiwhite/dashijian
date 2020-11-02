@@ -23,7 +23,6 @@ function getUserInfo() {
         url: '/my/userinfo',
         // 每次申请都判断是否带my开头的， 是的话就得获取headers
         success: function (res) {
-            console.log(res);
             if (res.status !== 0) {
                 return layui.layer.msg(res.message)
             }
